@@ -2,7 +2,7 @@ import React from "react"
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions ';
 import { Statistics } from "components/Statistics/Statistics";
 import { Notification } from "components/Notification/Notification";
-  
+import PropTypes from 'prop-types';  
   
 
 export const Section = ({
@@ -36,3 +36,12 @@ export const Section = ({
   );
 };
 
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+  countTotalFeedback: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};

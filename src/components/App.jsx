@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Section } from "./Section/Section";
+
+
 export class App extends Component {
+   
+
   state = {
     good: 0,
     neutral: 0,
@@ -39,10 +43,11 @@ export class App extends Component {
           neutral={this.state.neutral}
           bad={this.state.bad}
           countTotalFeedback={this.countTotalFeedback()}
-          positivePercentage={this.countPositiveFeedbackPercentage()||0}
+          positivePercentage={this.countPositiveFeedbackPercentage() || 0}
         />
       </div>
     );
   }
 }
+
 
