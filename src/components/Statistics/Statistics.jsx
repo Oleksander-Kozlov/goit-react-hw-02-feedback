@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';  
-
-
+import {StatisticP } from "./Statistics.styled"
+ 
 export const Statistics = ({
   good,
   neutral,
@@ -11,23 +11,22 @@ total,
 }) => {
   return (
     <div>
-      
-      <p>
+      <StatisticP>
         Good: <span>{good}</span>
-      </p>
-      <p>
+      </StatisticP>
+      <StatisticP>
         Neutral: <span>{neutral}</span>
-      </p>
-      <p>
+      </StatisticP>
+      <StatisticP>
         Bad: <span>{bad}</span>
-      </p>
-      <p>
-        Total: <span> {total} </span>
-      </p>
-      <p>
+      </StatisticP>
+      <StatisticP>
+        Total:  <span> {total} </span>
+      </StatisticP>
+      <StatisticP>
         Positive Feedback:
         <span> {positivePercentage}%</span>
-      </p>
+      </StatisticP>
     </div>
   );
 };

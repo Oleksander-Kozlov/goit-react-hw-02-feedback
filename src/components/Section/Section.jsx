@@ -16,7 +16,7 @@ export const Section = ({
 }) => {
   return (
     <section>
-      <div>
+      
         <h1>{title}</h1>
         <FeedbackOptions onLeaveFeedback={onLeaveFeedback} />
         <h2>Statistics</h2>
@@ -31,7 +31,7 @@ export const Section = ({
         ) : (
           <Notification message="There is no feedback" />
         )}
-      </div>
+      
     </section>
   );
 };
